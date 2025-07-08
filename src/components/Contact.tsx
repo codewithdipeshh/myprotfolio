@@ -1,0 +1,154 @@
+import React from 'react';
+import { Mail, MapPin, Linkedin, Github, Send } from 'lucide-react';
+
+const Contact: React.FC = () => {
+  return (
+    <section className="py-20 px-4 relative">
+      <div className="max-w-6xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="font-mono text-4xl font-bold text-green-300 mb-4">
+            [ESTABLISH_CONNECTION]
+          </h2>
+          <div className="w-24 h-1 bg-green-400 mx-auto"></div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* Contact Info */}
+          <div className="space-y-8">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-blue-400/20 rounded-lg blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+              <div className="relative bg-black/40 backdrop-blur-sm border border-green-400/30 rounded-lg p-8 hover:border-green-400/60 transition-all duration-500">
+                <div className="flex items-center space-x-3 mb-6">
+                  <div className="w-8 h-px bg-green-400"></div>
+                  <span className="font-mono text-green-300 text-lg">CONTACT_PROTOCOLS</span>
+                  <div className="w-8 h-px bg-green-400"></div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4 group/item">
+                    <Mail className="w-6 h-6 text-green-400 group-hover/item:text-green-300 transition-colors" />
+                    <div>
+                      <div className="font-mono text-green-300 text-sm">EMAIL</div>
+                      <div className="font-mono text-green-200">your.email@example.com</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-4 group/item">
+                    <MapPin className="w-6 h-6 text-green-400 group-hover/item:text-green-300 transition-colors" />
+                    <div>
+                      <div className="font-mono text-green-300 text-sm">LOCATION</div>
+                      <div className="font-mono text-green-200">Your City, State</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-4 group/item">
+                    <Linkedin className="w-6 h-6 text-green-400 group-hover/item:text-green-300 transition-colors" />
+                    <div>
+                      <div className="font-mono text-green-300 text-sm">LINKEDIN</div>
+                      <div className="font-mono text-green-200 text-sm">your-linkedin-profile</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-4 group/item">
+                    <Github className="w-6 h-6 text-green-400 group-hover/item:text-green-300 transition-colors" />
+                    <div>
+                      <div className="font-mono text-green-300 text-sm">GITHUB</div>
+                      <div className="font-mono text-green-200">your-github-username</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div className="space-y-4">
+              <a 
+                href="https://www.linkedin.com/in/your-profile" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full"
+              >
+                <button className="w-full group relative overflow-hidden bg-transparent border-2 border-blue-400 text-blue-400 font-mono py-3 px-6 hover:bg-blue-400 hover:text-black transition-all duration-300">
+                  <span className="absolute inset-0 bg-blue-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+                  <span className="relative z-10 flex items-center justify-center space-x-2">
+                    <Linkedin className="w-5 h-5" />
+                    <span>CONNECT_ON_LINKEDIN</span>
+                  </span>
+                </button>
+              </a>
+              
+              <a 
+                href="https://github.com/your-username" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full"
+              >
+                <button className="w-full group relative overflow-hidden bg-transparent border-2 border-purple-400 text-purple-400 font-mono py-3 px-6 hover:bg-purple-400 hover:text-black transition-all duration-300">
+                  <span className="absolute inset-0 bg-purple-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+                  <span className="relative z-10 flex items-center justify-center space-x-2">
+                    <Github className="w-5 h-5" />
+                    <span>VIEW_GITHUB_PROFILE</span>
+                  </span>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="relative group">
+            <div className="absolute inset-0 bg-gradient-to-l from-purple-400/20 to-green-400/20 rounded-lg blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+            <div className="relative bg-black/40 backdrop-blur-sm border border-green-400/30 rounded-lg p-8 hover:border-green-400/60 transition-all duration-500">
+              <div className="flex items-center space-x-3 mb-6">
+                <Send className="w-6 h-6 text-green-400" />
+                <span className="font-mono text-green-300 text-lg">SEND_MESSAGE</span>
+              </div>
+              
+              <form className="space-y-6">
+                <div>
+                  <label className="block font-mono text-green-300 text-sm mb-2">NAME</label>
+                  <input 
+                    type="text" 
+                    className="w-full bg-black/50 border border-green-400/30 rounded px-4 py-3 text-green-200 font-mono focus:border-green-400 focus:outline-none transition-colors"
+                    placeholder="Enter your name..."
+                  />
+                </div>
+                
+                <div>
+                  <label className="block font-mono text-green-300 text-sm mb-2">EMAIL</label>
+                  <input 
+                    type="email" 
+                    className="w-full bg-black/50 border border-green-400/30 rounded px-4 py-3 text-green-200 font-mono focus:border-green-400 focus:outline-none transition-colors"
+                    placeholder="Enter your email..."
+                  />
+                </div>
+                
+                <div>
+                  <label className="block font-mono text-green-300 text-sm mb-2">MESSAGE</label>
+                  <textarea 
+                    rows={4}
+                    className="w-full bg-black/50 border border-green-400/30 rounded px-4 py-3 text-green-200 font-mono focus:border-green-400 focus:outline-none transition-colors resize-none"
+                    placeholder="Enter your message..."
+                  ></textarea>
+                </div>
+                
+                <button 
+                  type="submit"
+                  className="w-full group relative overflow-hidden bg-transparent border-2 border-green-400 text-green-400 font-mono py-3 px-6 hover:bg-green-400 hover:text-black transition-all duration-300"
+                >
+                  <span className="absolute inset-0 bg-green-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></span>
+                  <span className="relative z-10 flex items-center justify-center space-x-2">
+                    <Send className="w-5 h-5" />
+                    <span>TRANSMIT_MESSAGE</span>
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
