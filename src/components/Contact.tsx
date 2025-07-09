@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
                     <Mail className="w-6 h-6 text-green-400 group-hover/item:text-green-300 transition-colors" />
                     <div>
                       <div className="font-mono text-green-300 text-sm">EMAIL</div>
-                      <div className="font-mono text-green-200">your.email@example.com</div>
+                      <div className="font-mono text-green-200">dipeshverma81122@gmail.com</div>
                     </div>
                   </div>
                   
@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
                     <MapPin className="w-6 h-6 text-green-400 group-hover/item:text-green-300 transition-colors" />
                     <div>
                       <div className="font-mono text-green-300 text-sm">LOCATION</div>
-                      <div className="font-mono text-green-200">Your City, State</div>
+                      <div className="font-mono text-green-200">Jaipur, Rajasthan</div>
                     </div>
                   </div>
                   
@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
                     <Linkedin className="w-6 h-6 text-green-400 group-hover/item:text-green-300 transition-colors" />
                     <div>
                       <div className="font-mono text-green-300 text-sm">LINKEDIN</div>
-                      <div className="font-mono text-green-200 text-sm">your-linkedin-profile</div>
+                      <div className="font-mono text-green-200 text-sm"><a href="https://www.linkedin.com/in/dipesh-verma-70b8ba2b7/" target="_blank" rel="noopener noreferrer">dipesh-verma-70b8ba2b7</a></div>
                     </div>
                   </div>
                   
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
                     <Github className="w-6 h-6 text-green-400 group-hover/item:text-green-300 transition-colors" />
                     <div>
                       <div className="font-mono text-green-300 text-sm">GITHUB</div>
-                      <div className="font-mono text-green-200">your-github-username</div>
+                      <div className="font-mono text-green-200"><a href="https://github.com/dipeshverma12" target="_blank" rel="noopener noreferrer">dipeshverma12</a></div>
                     </div>
                   </div>
                 </div>
@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
             {/* Quick Links */}
             <div className="space-y-4">
               <a 
-                href="https://www.linkedin.com/in/your-profile" 
+                href="https://www.linkedin.com/in/dipesh-verma-70b8ba2b7/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block w-full"
@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
               </a>
               
               <a 
-                href="https://github.com/your-username" 
+                href="https://github.com/dipeshverma12" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block w-full"

@@ -8,7 +8,7 @@ const About: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-mono text-4xl font-bold text-green-300 mb-4">
-            [ABOUT_SUBJECT]
+            About Dipesh Verma
           </h2>
           <div className="w-24 h-1 bg-green-400 mx-auto"></div>
         </div>
@@ -25,21 +25,21 @@ const About: React.FC = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-3">
                   <User className="w-6 h-6 text-green-400" />
-                  <span className="font-mono text-green-300 text-lg">PERSONAL_DATA</span>
+                  <span className="font-mono text-green-300 text-lg">Dipesh Verma</span>
                 </div>
                 
                 <div className="space-y-4 text-green-200">
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-green-400" />
-                    <span className="font-mono">your.email@example.com</span>
+                    <span className="font-mono">dipeshverma81122@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-green-400" />
-                    <span className="font-mono">Your City, State</span>
+                    <span className="font-mono">Jaipur, Rajasthan</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <GraduationCap className="w-5 h-5 text-green-400" />
-                    <span className="font-mono">Your Degree - Year Range</span>
+                    <span className="font-mono">B.Tech Computer Science (A.I), 2023-2027</span>
                   </div>
                 </div>
                 
@@ -66,9 +66,7 @@ const About: React.FC = () => {
                 </div>
                 
                 <p className="text-green-200 leading-relaxed">
-                  Motivated and detail-oriented individual with strong communication and problem-solving skills. 
-                  Passionate about technology and teamwork, currently pursuing your degree with specialization 
-                  in your field of study.
+                  I am Dipesh Verma, a passionate Front-End Developer and AI student based in Jaipur, Rajasthan. Currently pursuing my B.Tech in Computer Science (A.I) from 2023-2027, I am enthusiastic about technology, teamwork, and building innovative solutions. Let's connect and create something amazing together!
                 </p>
                 
                 <div className="space-y-3">

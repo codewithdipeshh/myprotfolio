@@ -28,12 +28,12 @@ const Hero: React.FC = () => {
           </div>
           
           <h1 className="font-mono text-5xl md:text-7xl font-bold text-green-300 mb-6 tracking-wider">
-            YOUR NAME
+            Dipesh Verma
           </h1>
           
           <div className="font-mono text-xl md:text-2xl text-green-200 mb-8">
             <span className="border-r-2 border-green-400 animate-pulse pr-2">
-              FRONT-END DEVELOPER
+              Front-End Developer
             </span>
           </div>
           
@@ -41,15 +41,15 @@ const Hero: React.FC = () => {
           <div className="flex justify-center space-x-8 mb-8">
             <div className="flex items-center space-x-2 text-green-400">
               <Terminal className="w-5 h-5" />
-              <span className="font-mono text-sm">YOUR CITY, STATE</span>
+              <span className="font-mono text-sm">Jaipur, Rajasthan</span>
             </div>
             <div className="flex items-center space-x-2 text-green-400">
               <Code className="w-5 h-5" />
-              <span className="font-mono text-sm">MULTI-TECH INTERN</span>
+              <span className="font-mono text-sm">B.Tech Computer Science (A.I), 2023-2027</span>
             </div>
             <div className="flex items-center space-x-2 text-green-400">
               <Database className="w-5 h-5" />
-              <span className="font-mono text-sm">AI STUDENT</span>
+              <span className="font-mono text-sm">AI Student</span>
             </div>
           </div>
           
