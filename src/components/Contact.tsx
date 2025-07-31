@@ -1,7 +1,38 @@
 import React from 'react';
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Mail, MapPin, Linkedin, Github, Send } from 'lucide-react';
 
 const Contact: React.FC = () => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const result = await emailjs.sendForm(
+      'service_dacg4xl',          // Your service ID
+      'template_ibvkspt',         // Your template ID
+      e.currentTarget,            // The actual HTML form element
+      'xcdA_ODYsAzQG_BWl'         // Your public key
+    );
+
+    console.log('EmailJS result:', result);
+    alert("Message sent successfully! I'll get back to you soon.");
+    setFormData({ name: '', email: '', message: '' });
+  } catch (error: any) {
+    console.error('EmailJS Error:', error?.text || error);
+    alert('Failed to send message. Please check console.');
+  }
+
+  setIsSubmitting(false);
+};
+const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [focusedField, setFocusedField] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   return (
     <section className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
@@ -104,10 +135,11 @@ const Contact: React.FC = () => {
                 <span className="font-mono text-green-300 text-lg">SEND_MESSAGE</span>
               </div>
               
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit} >
                 <div>
                   <label className="block font-mono text-green-300 text-sm mb-2">NAME</label>
                   <input 
+                    name='name'
                     type="text" 
                     className="w-full bg-black/50 border border-green-400/30 rounded px-4 py-3 text-green-200 font-mono focus:border-green-400 focus:outline-none transition-colors"
                     placeholder="Enter your name..."
@@ -117,6 +149,7 @@ const Contact: React.FC = () => {
                 <div>
                   <label className="block font-mono text-green-300 text-sm mb-2">EMAIL</label>
                   <input 
+                    name='email'
                     type="email" 
                     className="w-full bg-black/50 border border-green-400/30 rounded px-4 py-3 text-green-200 font-mono focus:border-green-400 focus:outline-none transition-colors"
                     placeholder="Enter your email..."
@@ -126,6 +159,7 @@ const Contact: React.FC = () => {
                 <div>
                   <label className="block font-mono text-green-300 text-sm mb-2">MESSAGE</label>
                   <textarea 
+                    name='message'
                     rows={4}
                     className="w-full bg-black/50 border border-green-400/30 rounded px-4 py-3 text-green-200 font-mono focus:border-green-400 focus:outline-none transition-colors resize-none"
                     placeholder="Enter your message..."

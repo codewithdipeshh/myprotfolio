@@ -5,23 +5,23 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       title: "Your Position",
-      company: "Your Company",
-      duration: "Duration",
-      location: "Location",
+      company: "Linuxworld",
+      duration: "Creators",
+      location: "Jaipur, Rajasthan",
       description: [
         "Your responsibility 1",
         "Your responsibility 2",
         "Your responsibility 3",
-        "Your responsibility 4",
-        "Your responsibility 5"
+        "Your responsibility 4"
+        
       ],
       status: "active"
     },
     {
-      title: "Your Previous Position",
-      company: "Your Previous Company",
+      title: "Frontend Developer",
+      company: "LN-techinfo",
       duration: "Duration",
-      location: "Location",
+      location: "Jaipur, Rajasthan",
       description: [
         "Your previous responsibility 1",
         "Your previous responsibility 2",

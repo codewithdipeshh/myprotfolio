@@ -31,7 +31,7 @@ const Navigation: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Terminal className="w-6 h-6 text-green-400" />
-            <span className="font-mono text-green-300 font-bold">YOUR.NAME</span>
+            <span className="font-mono text-green-300 font-bold">root@Dipesh</span>
           </div>
 
           {/* Desktop Navigation */}
