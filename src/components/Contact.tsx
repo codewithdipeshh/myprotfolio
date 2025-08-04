@@ -77,7 +77,7 @@ const [formData, setFormData] = useState({
                     <Linkedin className="w-6 h-6 text-green-400 group-hover/item:text-green-300 transition-colors" />
                     <div>
                       <div className="font-mono text-green-300 text-sm">LINKEDIN</div>
-                      <div className="font-mono text-green-200 text-sm"><a href="https://www.linkedin.com/in/dipesh-verma-70b8ba2b7/" target="_blank" rel="noopener noreferrer">dipesh-verma-70b8ba2b7</a></div>
+                      <div className="font-mono text-green-200 text-sm"><a href="https://www.linkedin.com/in/dipesh-verma-70b8ba2b7/" target="_blank" rel="noopener noreferrer">Dipesh Verma</a></div>
                     </div>
                   </div>
                   
@@ -85,7 +85,7 @@ const [formData, setFormData] = useState({
                     <Github className="w-6 h-6 text-green-400 group-hover/item:text-green-300 transition-colors" />
                     <div>
                       <div className="font-mono text-green-300 text-sm">GITHUB</div>
-                      <div className="font-mono text-green-200"><a href="https://github.com/dipeshverma12" target="_blank" rel="noopener noreferrer">dipeshverma12</a></div>
+                      <div className="font-mono text-green-200"><a href="https://github.com/codewithdipeshh" target="_blank" rel="noopener noreferrer">codewithdipeshh</a></div>
                     </div>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const [formData, setFormData] = useState({
               </a>
               
               <a 
-                href="https://github.com/dipeshverma12" 
+                href="https://github.com/codewithdipeshh" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block w-full"
