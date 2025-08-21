@@ -19,7 +19,7 @@ const Experience: React.FC = () => {
     },
     {
       title: "Frontend Developer",
-      company: "LN-techinfo",
+      company: "",
       duration: "Duration",
       location: "Jaipur, Rajasthan",
       description: [
